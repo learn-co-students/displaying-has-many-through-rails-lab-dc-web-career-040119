@@ -1,0 +1,9 @@
+<div class="centered">
+  <h1 class="page-title">Doctors</h1>
+    <% @doctors.each do |doctor| %>
+  <div class="index-item">
+    <%= link_to doctor.name, doctor_path(doctor) %> <br>
+    currently seeing <%= doctor.number_of_patients %> patients
+  </div>
+    <% end %>
+</div>

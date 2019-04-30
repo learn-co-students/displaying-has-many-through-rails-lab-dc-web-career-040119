@@ -13,3 +13,37 @@
  *= require_tree .
  *= require_self
  */
+
+.centered {
+    text-align: center;
+}
+
+.page-title {
+    color: cornflowerblue;
+}
+
+.index-item {
+    margin: auto;
+    color: white;
+    background: cornflowerblue;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 10px;
+}
+
+.index-item a {
+    text-decoration: none;
+}
+
+.index-item a:link {
+    color: white
+}
+
+.index-item a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.index-item a:visited {
+    color: white
+}

@@ -1,0 +1,5 @@
+<div class="centered">
+  <h1 class="page-title">Appointment on <%= @appointment.stringify_date %></h1>
+  <h3 class="page-title">Patient: <%=link_to @appointment.patient_name, patient_path(@appointment.patient)%></h3> <br>
+  <h3 class="page-title">Doctor: <%=link_to @appointment.doctor_name, doctor_path(@appointment.doctor)%></h3>
+</div>
