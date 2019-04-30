@@ -1,0 +1,12 @@
+<div class="centered">
+  <h1 class="page-title"><%= @doctor.name %></h1>
+  <h3 class="page-title"><%= @doctor.department %></h3>
+  <div class="appointments-container">
+    <% @appointments.each do |appointment| %>
+      <div class="index-item">
+        <%= link_to appointment.patient_name, patient_path(appointment.patient)%> <br>
+        <%= link_to appointment.stringify_date, appointment_path(appointment) %>
+      </div>
+    <% end %>
+  </div>
+</div>
